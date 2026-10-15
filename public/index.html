@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11152a">
+  <meta name="description" content="Shopnix — discover your next favourite find.">
+  <title>Shopnix — Find Your Vibe</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">Your next favourite find starts here ✦ Shopnix</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Shopnix home"><img class="brand-logo" src="/assets/shopnix-logo.svg" alt="Shopnix"></a>
+    <form id="search-form" class="search-box"><span>⌕</span><input id="search-input" placeholder="Search products or categories..." aria-label="Search products and categories"><button type="submit">Search</button></form>
+    <div class="header-actions">
+      <button class="icon-btn" id="wishlist-open" title="Wishlist">♡ <span id="wishlist-count">0</span></button>
+      <button class="icon-btn" id="cart-open" title="Cart">Bag <span id="cart-count">0</span></button>
+      <button class="account-btn" id="account-open">Login</button>
+    </div>
+  </header>
+  <nav class="category-nav" id="category-nav"><button class="category-pill active" data-category="All">All products</button></nav>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="sparkle">✦</span> YOUR WORLD, YOUR VIBE</span>
+        <h1>Find your<br><span>next favourite.</span></h1>
+        <p id="hero-subtitle">A little bit of everything. A whole lot of you.</p>
+        <div class="hero-buttons"><a href="#products" class="primary-btn">Explore collection <span>↗</span></a><span class="hero-note">Fresh finds. Good vibes.</span></div>
+        <div class="hero-tags"><span>✦ Curated finds</span><span>♡ Made for you</span><span>⌁ Easy ordering</span></div>
+      </div>
+      <div class="hero-art" aria-label="Shopnix shopping banner artwork" style="background-image:linear-gradient(90deg,rgba(7,17,45,.12),rgba(7,17,45,.04)),url(/assets/shopnix-banner.svg);background-size:cover;background-position:center">
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <div class="hero-card card-back"><span>YOUR VIBE</span><strong>✦</strong></div>
+        <div class="hero-card card-front"><span class="mini-label">SHOPNIX PICKS</span><div class="hero-glyph">S<span>✦</span></div><strong>Made to<br>stand out.</strong><small>DISCOVER SOMETHING NEW</small></div>
+        <div class="float-chip chip-top">✦ new finds</div><div class="float-chip chip-bottom">♡ add to wishlist</div>
+      </div>
+    </section>
+    <section class="trust-strip"><span>✦ Handpicked style</span><span>♡ Your kind of finds</span><span>↗ Simple ordering</span><span>✧ Always exploring</span></section>
+    <section class="section-heading" id="products"><div><span class="eyebrow">THE SHOPNIX EDIT</span><h2>Explore the collection<span>.</span></h2><p>Find something that feels like you.</p></div><span class="result-count" id="result-count">Loading products…</span></section>
+    <div class="filter-row"><div id="category-filters" class="filter-chips"></div><select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name A–Z</option></select></div>
+    <div id="product-grid" class="product-grid"><div class="loading-card">Getting your finds ready…</div></div>
+    <section class="promo-banner"><div><span class="eyebrow">THE SHOPNIX WAY</span><h2>Small finds.<br>Big main-character energy.</h2><p id="promo-copy">Your next favourite is only a few clicks away.</p></div><a href="#products" class="light-btn">Find your vibe ↗</a><div class="promo-star">✦</div></section>
+    <section class="newsletter"><div><span class="eyebrow">STAY IN THE LOOP</span><h2>Good finds, good vibes.</h2><p>Explore the latest additions to Shopnix.</p></div><a href="#products" class="primary-btn">Explore products ↗</a></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><a class="brand footer-brand" href="/"><img class="brand-logo" src="/assets/shopnix-logo.svg" alt="Shopnix"></a><p>Your world, your vibe. Find your next favourite.</p></div><div class="footer-links"><a href="#about" id="about-link">About Shopnix</a><a href="#contact" id="contact-link">Contact</a><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms</a></div><div class="footer-bottom"><span>© <span id="year"></span> Shopnix. All rights reserved.</span><span>Made for your vibe ✦</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart"><div class="drawer-head"><div><span class="eyebrow">YOUR PICKS</span><h2>Your cart</h2></div><button class="close-btn" data-close>×</button></div><div id="cart-items" class="drawer-content"></div><div class="drawer-bottom"><div class="total-line"><span>Subtotal</span><strong id="cart-total">₹0</strong></div><button id="checkout-btn" class="primary-btn full-btn">Order now ↗</button><p class="fine-print">Orders are completed directly through your selected contact method.</p></div></aside>
+  <aside class="drawer" id="wishlist-drawer" aria-label="Wishlist"><div class="drawer-head"><div><span class="eyebrow">SAVED FOR LATER</span><h2>Your wishlist</h2></div><button class="close-btn" data-close>×</button></div><div id="wishlist-items" class="drawer-content"></div></aside>
+  <section class="modal" id="auth-modal" aria-modal="true" role="dialog" aria-labelledby="auth-title"><button class="close-btn modal-close" data-close>×</button><a class="brand modal-brand" href="/"><img class="brand-logo" src="/assets/shopnix-logo.svg" alt="Shopnix"></a><span class="eyebrow">WELCOME TO YOUR VIBE</span><h2 id="auth-title">Your next favourite awaits.</h2><div class="auth-tabs"><button class="auth-tab active" data-auth-tab="login">Login</button><button class="auth-tab" data-auth-tab="register">Create account</button><button class="auth-tab" data-auth-tab="admin">Admin</button></div><form id="auth-form" class="auth-form"><label id="name-wrap" class="hidden">Name<input id="auth-name" autocomplete="name" minlength="2"></label><label>Email<input id="auth-email" type="email" autocomplete="email" required></label><label>Password<input id="auth-password" type="password" autocomplete="current-password" minlength="8" required></label><button class="primary-btn full-btn" type="submit" id="auth-submit">Login to Shopnix ↗</button><p class="form-message" id="auth-message"></p></form><button class="google-btn" id="google-login" disabled title="Google OAuth will be configured later">G&nbsp; Continue with Google <small>Available after setup</small></button><p class="fine-print">By continuing, you agree to our Terms and Privacy Policy.</p></section>
+  <section class="modal modal-wide" id="admin-modal" aria-modal="true" role="dialog" aria-labelledby="admin-title"><button class="close-btn modal-close" data-close>×</button><span class="eyebrow">SHOPNIX CONTROL ROOM</span><h2 id="admin-title">Admin dashboard<span>.</span></h2><div id="admin-content"></div></section>
+  <section class="modal" id="order-modal" aria-modal="true" role="dialog" aria-labelledby="order-title"><button class="close-btn modal-close" data-close>×</button><span class="eyebrow">ALMOST YOURS</span><h2 id="order-title">Choose how to order<span>.</span></h2><div id="order-summary" class="order-summary"></div><div class="order-buttons"><button id="order-whatsapp" class="order-option whatsapp">☏ Order on WhatsApp <span>↗</span></button><button id="order-telegram" class="order-option telegram">➤ Order on Telegram <span>↗</span></button></div><p class="fine-print">Shopnix opens your selected contact app with your order summary. Confirm the order directly with the seller.</p></section>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

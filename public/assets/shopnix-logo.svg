@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" role="img" aria-label="Shopnix logo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00e5ff"/><stop offset=".52" stop-color="#4169ff"/><stop offset="1" stop-color="#ff24c8"/></linearGradient><linearGradient id="t" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff"/><stop offset="1" stop-color="#f6b5ff"/></linearGradient></defs>
+<g transform="translate(8 10)"><path d="M50 42c-1-23 15-37 37-37s38 14 37 37" fill="none" stroke="#00dfff" stroke-width="10" stroke-linecap="round"/><path d="M23 56 115 56 132 112Q134 127 118 131L31 131Q16 129 20 112Z" fill="url(#g)"/><path d="M35 86c22-30 60-27 75-8-14-4-27 1-38 13 18-7 32-3 40 6-26 1-39 12-55 13 5-8 9-14 18-20-15 0-27 4-40 11Z" fill="#09132f"/><ellipse cx="76" cy="102" rx="68" ry="17" fill="none" stroke="url(#g)" stroke-width="8" transform="rotate(-18 76 102)"/></g>
+<text x="165" y="98" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="-4" fill="url(#t)">Shopnix</text><circle cx="438" cy="42" r="5" fill="#ff24c8"/>
+</svg>
